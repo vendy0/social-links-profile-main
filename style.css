@@ -1,0 +1,24 @@
+:root{
+    --clr-green: hsl(75, 94%, 57%);
+
+    --clr-white: hsl(0, 0%, 100%);
+    
+    --clr-grey-700: hsl(0, 0%, 20%);
+    --clr-grey-800: hsl(0, 0%, 12%);
+    --clr-grey-900: hsl(0, 0%, 8%);
+}
+body{
+min-height: 100vh;
+min-width: 100vw;
+background: var(--clr-grey-900);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.profil-container{
+background: var(--clr-grey-800);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
