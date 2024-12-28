@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'inter';
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: normal;
+}
+
 :root{
     --clr-green: hsl(75, 94%, 57%);
 
@@ -8,6 +15,10 @@
     --clr-grey-900: hsl(0, 0%, 8%);
 }
 body{
+    position: relative;
+    font-weight: bold;
+    color: var(--clr-white);
+    font-family: 'inter', sans-serif;
 min-height: 100vh;
 min-width: 100vw;
 background: var(--clr-grey-900);
@@ -16,9 +27,88 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 }
+
 .profil-container{
 background: var(--clr-grey-800);
 display: flex;
 flex-direction: column;
 align-items: center;
+border-radius: 10px;
+margin: 0;
+padding: 40px 60px;     
+max-width: 300px; 
+}
+
+img{
+    margin: 0;
+    border-radius: 50%;
+    width: 80px;
+}
+.user-info{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 20px;
+}
+.user-name{
+    font-size: 1.6em;
+    margin: 7px;
+    font-weight: 500;
+}
+.user-adress{
+color: var(--clr-green);
+font-size: 0.9em;
+}
+
+.user-description{
+    font-size: 14px;
+    margin: 10px;
+    font-weight: 400;
+}
+
+.profil-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-grey-700);
+    width: 100%;
+    padding: 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.link a{
+    text-decoration: none;
+color: var(--clr-white);
+}
+.link:hover, .link:focus, .link a:hover, .link:hover a{
+background: var(--clr-green);
+color: var(--clr-grey-900);
+}
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #fff3, transparent);
+    color: var(--clr-white);
+}
+
+
+.attribution a{
+    color: var(--clr-grey-700);
 }
