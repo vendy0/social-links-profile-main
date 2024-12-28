@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "inter";
   src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format(truetype);
@@ -99,9 +100,13 @@ img {
 .link:hover a {
   background: var(--clr-green);
   color: var(--clr-grey-900);
+  transition: all .3s ease;
+}
+footer{
+	width: 100%;
 }
 .attribution {
-	font-size: 0.75em;
+  font-size: 0.75em;
   width: 100%;
   position: absolute;
   bottom: 0;
